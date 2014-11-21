@@ -1,1 +1,1 @@
-Develop_data_product
+An application for coursera course -- Developing Data Products
