@@ -14,7 +14,7 @@ mode        : selfcontained # {standalone, draft}
 
 1. The Data set from tabulated data set used by Galton in 1885 to study the relationship between a parent's height and their childrens.
 2. This data is used to predict childrens' height from their parents' height.
-3. There is a Correction for gender via multiplying female heights by 1.08.
+3. There is a correction for gender via multiplying female heights by 1.08.
 ```{r,fig.height=4.5,fig.width=10}
 library(UsingR); data(galton);
 names(galton)
