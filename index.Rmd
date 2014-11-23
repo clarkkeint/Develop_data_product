@@ -13,22 +13,15 @@ mode        : selfcontained # {standalone, draft}
 ## Galton's Data
 
 1. The Data set from tabulated data set used by Galton in 1885 to study the relationship between a parent's height and their childrens.
-2. This data is used to predict childrens' height by their parents' height.
-3. The data frame has 928 observations on the following 2 variables:
-   * child  : The child's height
-   * parent : The “midparent” height
-4. There is a Correction for gender via multiplying female heights by 1.08.
-
-
---- .class #3 
-
-## Histogram of two variable
+2. This data is used to predict childrens' height from their parents' height.
+3. There is a Correction for gender via multiplying female heights by 1.08.
 ```{r,fig.height=4.5,fig.width=10}
-library(UsingR); data(galton)
-par(mfrow=c(1,2))
-hist(galton$child,col="blue",breaks=100)
-hist(galton$parent,col="blue",breaks=100)
+library(UsingR); data(galton);
+names(galton)
+dim(galton)
+
 ```
+
 
 --- .class #4 
 

@@ -48,32 +48,22 @@
   <article data-timings="">
     <ol>
 <li>The Data set from tabulated data set used by Galton in 1885 to study the relationship between a parent&#39;s height and their childrens.</li>
-<li>This data is used to predict childrens&#39; height by their parents&#39; height.</li>
-<li>The data frame has 928 observations on the following 2 variables:
-
-<ul>
-<li>child  : The child&#39;s height</li>
-<li>parent : The “midparent” height</li>
-</ul></li>
+<li>This data is used to predict childrens&#39; height from their parents&#39; height.</li>
 <li>There is a Correction for gender via multiplying female heights by 1.08.</li>
 </ol>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="class" id="3" style="background:;">
-  <hgroup>
-    <h2>Histogram of two variable</h2>
-  </hgroup>
-  <article data-timings="">
-    <pre><code class="r">library(UsingR); data(galton)
-par(mfrow=c(1,2))
-hist(galton$child,col=&quot;blue&quot;,breaks=100)
-hist(galton$parent,col=&quot;blue&quot;,breaks=100)
+<pre><code class="r">library(UsingR); data(galton);
+names(galton)
 </code></pre>
 
-<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+<pre><code>## [1] &quot;child&quot;  &quot;parent&quot;
+</code></pre>
+
+<pre><code class="r">dim(galton)
+</code></pre>
+
+<pre><code>## [1] 928   2
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -145,26 +135,20 @@ prediction[[1]]
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Histogram of two variable'>
+        data-slide=2 title='Comparing children&#39;s heights and their parents&#39; heights'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Comparing children&#39;s heights and their parents&#39; heights'>
+        data-slide=3 title='Use the simple linear regression to fit a line'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Use the simple linear regression to fit a line'>
+        data-slide=4 title='Predict children&#39;s height from parents&#39; height'>
          4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Predict children&#39;s height from parents&#39; height'>
-         5
       </a>
     </li>
   </ul>
